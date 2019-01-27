@@ -6,7 +6,7 @@
   "author": "mitsuru793 <mitsuru793@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "test": "TS_NODE_COMPILER_OPTIONS='{\"module\":\"commonjs\"}' mocha --require ts-node/register test/**/*.ts"
+    "test": "NODE_PATH=src TS_NODE_COMPILER_OPTIONS='{\"module\":\"commonjs\"}' mocha --require ts-node/register test/**/*.ts"
   },
   "devDependencies": {
     "@types/chai": "^4.1.7",
